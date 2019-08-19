@@ -1,3 +1,7 @@
+.table {
+    background-image: url("../../assets/img/backgroundTable.jpeg");
+}
+
 .medicalList , .pharmacyList{
     padding-top:10px;
     padding-left:20px;

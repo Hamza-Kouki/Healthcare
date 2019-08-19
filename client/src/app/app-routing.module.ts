@@ -1,17 +1,24 @@
-import { NgModule } from '@angular/core';
+//import { PatientListComponent } from './patient-list/patient-list.component';
+// import { PatienListComponent} from "./patient-list/patient-list.component";
+import {PatientListComponent} form '';
+import { NgModule, Component } from '@angular/core';
 /*import { CommonModule } from '@angular/common';*/
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 /*import {NavComponent} from './nav/nav.component';*/
 import {PatientsComponent} from './patients/patients.component';
+import {ConsultationFormsPatienComponent} from './consultation-forms-patien/consultation-forms-patien.component'
 import {PharmacyComponent} from './pharmacy/pharmacy.component';
 import {ProfileComponent} from './profile/profile.component';
+import {PatientListComponent} from './patient-list/patient-list.Component';
 
 
 
   const  routes: Routes =[
   {path: 'doctor', component: HomeComponent},
   {path: 'doctor/patients', component: PatientsComponent},
+  {path: 'doctor/patients/ConsultationFormsPatienComponent' , component: ConsultationFormsPatienComponent},
+  {path: 'doctor/patients/patientList' , component: PatientListComponent},
   {path: 'doctor/pharmacy', component: PharmacyComponent},
   {path: 'doctor/profile', component: ProfileComponent}
 ];
