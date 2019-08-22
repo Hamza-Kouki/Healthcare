@@ -1,1 +1,89 @@
-<p>consultation-forms-patien works!</p>
+<div class="container">
+    <h2>consultationFormsPatien</h2>
+    <form action="#">
+        <div class="form-group">
+            <div class="form-group">
+                <label for="">User Patient:</label>
+                <input type="text" class="form-control" name="patientUser" value="JohnUser" disabled=true>
+            </div>
+            <div class="form-group">
+                <label for="">Patient Name:</label>
+                <input type="text" class="form-control" name="patientName" value="John_firstName" disabled=true>
+            </div>
+            <div class="form-group">
+                <label for="">Patient lastName:</label>
+                <input type="text" class="form-control" name="patientLastName" value="John_LastName" disabled=true>
+            </div>
+            <div class="form-group">
+                <h3>Old consultaion ?</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Date of consultations</th>
+                            <th>Reasons of consultations</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td><input type="date" class="myPatientDate" disabled=true></td>
+                        <td>ReasonsName</td>
+                        <td>
+                            <form action="#" method="post">
+                                <div style="display: flex">
+                                    <div><a href="#" class="btn btn-primary">Details</a></div>
+                                    <div><a href="#" class="btn btn-default">Editer</a></div>
+                                    <div><button type="submit" class="btn btn-danger">Supprimer</button></div>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="date" class="myPatientDate" disabled=true></td>
+                        <td>ReasonsName</td>
+                        <td>
+                            <form action="#" method="post">
+                                <div style="display: flex">
+                                    <div><a href="#" class="btn btn-primary">Details</a></div>
+                                    <div><a href="#" class="btn btn-default">Editer</a></div>
+                                    <div><button type="submit" class="btn btn-danger">Supprimer</button></div>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!----------------------------------------------------------------------------->
+            <!----------------------------------------------------------------------------->
+            <label for="">Medical case specification:</label>
+            <textarea name="medicalCaseSpecification" class="form-control" id="" cols="30" rows="5"></textarea>
+        </div>
+        <div class="form-group  ">
+            <label for="">Select a medical form the list </label>
+            <div class="medicalList">
+                <label style="display:block;">
+                    <input type="radio" name="medical_Name" checked>Priority Medical
+                </label>
+                <label style="display:block;">
+                    <input type="radio" name="medical_Name">Health First Medical Supply
+                </label>
+                <label style="display:block;">
+                    <input type="radio" name="medical_Name">CCC Medical Co
+                </label>
+            </div>
+        </div>
+        <div class="form-group ">
+            <label for="">Select pharmacy </label>
+            <div class="pharmacyList">
+                <label style="display:block;">
+                    <input type="radio" name="pharmacy_Name" checked>pharmacy_Name
+                </label>
+                <label style="display:block;">
+                    <input type="radio" name="pharmacy_Name">pharmacy_Name
+                </label>
+                <label style="display:block;">
+                    <input type="radio" name="pharmacy_Name">pharmacy_Name
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block buttonFormConsultation">Save</button>
+    </form>
+</div>
