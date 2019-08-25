@@ -12,6 +12,7 @@ import { ConsultationFormsPatienComponent } from './consultation-forms-patien/co
 import { PharmacyComponent } from './pharmacy/pharmacy.component';
 import { ProfileComponent } from './profile/profile.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

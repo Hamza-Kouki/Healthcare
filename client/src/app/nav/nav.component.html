@@ -5,9 +5,16 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a routerLink="doctor">Home</a></li>
-      <li><a routerLink="doctor/patients">Patients</a></li>
+      <li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="#">Patients<span class="caret"></span></a>
+        <ul class="dropdown-menu dropdown-content">
+        <li><a routerLink="consultation">Consultation Patient</a></li>
+        <li><a routerLink="patientList">complete liste Patients</a></li>
+        </ul>
+      </li>
       <li><a routerLink="doctor/pharmacy">Pharmacy</a></li>
       <li><a routerLink="doctor/profile">Profile</a></li>
     </ul>
   </div>
 </nav>
+
+
